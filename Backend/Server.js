@@ -3,7 +3,7 @@ const express = require("express")
 const cors = require("cors")
 const mongoose = require("mongoose")
 
-mongoose.connect("mongodb+srv://shafara:droidchappie@cluster0.arydp.mongodb.net/datas-idea",{ useNewUrlParser: true})
+mongoose.connect("mongodb://localhost/",{ useNewUrlParser: true})
 
 mongoose.connection.once('open', () => console.log("Mongodb connection established successfully"))
 const app = express()
